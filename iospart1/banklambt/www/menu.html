@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="menu.js"></script>
+
+<style>
+.menubtn {
+    background-color:blue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.menu {
+
+    display: inline-block;
+}
+.menu-content {
+    display: none;
+    background-color: white;
+    min-width: 100px;
+
+
+}
+
+.menu-content a {
+    color: black;
+    display: block;
+}
+
+.menu-content a:hover {background-color: green;}
+
+.menu:hover .menu-content {display: block;}
+
+
+</style>
+</head>
+<body>
+
+  <h1 id="heading">welcome</h1>
+<div class="menu">
+  <button class="menubtn">Menu</button>
+  <div class="menu-content">
+    <a href=" javascript:redirectToAccount()">account</a>
+      <a href="currentAccountSummary.html">View Current Account Summary</a>
+        <a href="creditAccountSummary.html">View Credit Account Summary</a>
+    <a href="changePassword.html">changepassword</a>
+    <a href="voidcheque.html">print my void check</a>
+    <a href="index.html">exit</a>
+
+  </div>
+</div>
+
+</body>
+</html>
